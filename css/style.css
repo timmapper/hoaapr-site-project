@@ -1,0 +1,359 @@
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../fonts/EBGaramond-SemiBold.woff2") format("woff2");
+  src: url("../fonts/EBGaramond-Bold.woff2") format("woff2");
+  src: url("../fonts/EBGaramond-BoldItalic.woff2") format("woff2");
+  src: url("../fonts/EBGaramond-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "BalkaraFreeCondensed";
+  src: url("../fonts/BalkaraFreeCondensed.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color-1: #817369;
+  --primary-color-2: #8f837b;
+  --content-color-1: #2e2926;
+  --content-color-2: #4d3e36;
+  --background-color-1: #f5efeb;
+  --background-color-2: #ebdfd8;
+}
+
+body {
+  font-family: "EB Garamond", serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  font-optical-sizing: auto;
+  color: var(--content-color-2);
+  background-color: var(--background-color-1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--content-color-2);
+}
+
+.container {
+  width: 80rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  padding: 1.25rem 0;
+  border-bottom: 0.5rem solid transparent;
+  border-image-source: url(../img/header-border.png);
+  border-image-slice: 100% 0;
+  border-image-repeat: repeat;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-scrolled {
+  animation-name: headerScrollAnim;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes headerScrollAnim {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: var(--background-color-1);
+  }
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  flex: 1 1 0%;
+  max-height: 5rem;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  column-gap: 3.75rem;
+}
+
+.header-nav-item {
+  font-family: "BalkaraFreeCondensed", sans-serif;
+  font-weight: normal;
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.header-nav-item a {
+  transition: 0.3s;
+  color: var(--content-color-1);
+}
+
+.header-nav-item a:hover {
+  color: var(--primary-color-2);
+}
+
+.header-btn {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 0%;
+  font-family: "BalkaraFreeCondensed", sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--content-color-1);
+}
+
+.header-btn a {
+  color: var(--content-color-1);
+  transition: 0.3s;
+}
+
+.header-btn a:hover {
+  color: var(--primary-color-2);
+}
+
+.hero {
+  background-image: url(../img/index-white-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: -8rem;
+  align-items: center;
+  box-shadow: inset 0 -2.5rem 2.5rem rgba(46, 41, 38, 25%);
+}
+
+.hero-inner {
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+.hero-title {
+  line-height: 3.125rem;
+  font-size: 3rem;
+  font-family: "BalkaraFreeCondensed", sans-serif;
+  color: var(--content-color-1);
+  margin: 0 auto;
+  max-width: 46rem;
+}
+
+.hero-content {
+  line-height: 1.875rem;
+  font-size: 1.25rem;
+  max-width: 46rem;
+  text-align: center;
+  margin: 2rem auto 0;
+}
+
+.hero-btns {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hero-btn {
+  font-family: "BalkaraFreeCondensed", sans-serif;
+  line-height: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--background-color-1);
+  background-color: var(--primary-color-1);
+  padding: 0.625rem 1.75rem;
+  border-radius: 1.5rem;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: var(--primary-color-2);
+}
+
+.hero-photos {
+  display: flex;
+  column-gap: 1rem;
+  margin-top: 8rem;
+}
+
+.hero-photo-div {
+  text-align: center;
+}
+
+.hero-photo {
+  border: 2px solid var(--primary-color-1);
+  border-radius: 1.5rem;
+}
+
+.features {
+  background-image: url(../img/black-cement-rough-surface\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-inner {
+  margin: 7.5rem auto;
+}
+
+.features-title {
+  color: var(--background-color-1);
+  font-family: "BalkaraFreeCondensed", sans-serif;
+  font-weight: 400;
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.features-blocks {
+  display: grid;
+  max-width: 80%;
+  column-gap: 2rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+}
+
+.features-block {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.features-block-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.features-block-text {
+  margin-left: 1.25rem;
+}
+
+.features-block-title {
+  color: var(--background-color-1);
+  font-family: "BalkaraFreeCondensed", sans-serif;
+  font-weight: 400;
+  line-height: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.features-block-content {
+  margin-top: 1rem;
+  color: var(--background-color-2);
+  font-weight: 500;
+  line-height: 1.875rem;
+  font-size: 1.25rem;
+}
+
+.testimonials {
+  background-image: url(../img/index-white-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-inner {
+  margin: 7.5rem auto;
+  display: flex;
+}
+
+.testimonials-slider {
+  display: flex;
+}
+
+.testimonial-portrait {
+  border: 2px solid var(--primary-color-1);
+  border-radius: 1.5rem;
+  margin-right: 2.5rem;
+  box-shadow: -4px 4px 4px 0 rgba(46, 41, 38, 25%);
+}
+
+.tsitata {
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--content-color-2);
+}
+
+.testimonial-author {
+  font-family: "BalkaraFreeCondensed", sans-serif;
+  font-weight: 400;
+  margin-top: 0.75rem;
+  color: var(--content-color-1);
+}
+
+.testimonial-about {
+  line-height: 2.5rem;
+}
+
+.strelochka {
+  background-color: var(--primary-color-1);
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.strelochka:hover {
+  background-color: var(--primary-color-2);
+}
+
+.testimonials-backward {
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 6rem;
+  display: flex;
+}
+
+.testimonials-forward {
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 6rem;
+  display: flex;
+}
+
+.footer {
+  background-image: url(../img/black-cement-rough-surface\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.footer-inner {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyrights {
+  color: var(--background-color-2);
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+}
