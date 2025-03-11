@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог — Лесная Парная</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.png" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="img/logo.svg" alt="Лесная Парная" />
+            </a>
+          </div>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a href="index.html" class="header-nav-link">Главная</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="catalog.html" class="header-nav-link">Каталог</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="about.html" class="header-nav-link">О нас</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-btn">
+            <a href="catalog.html">Бронь</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="scripts/headerScroll.js"></script>
+    <main>
+      <section class="catalog-hero">
+        <div class="container">
+          <div class="catalog-hero-inner">
+            <h1 class="catalog-hero-title">Каталог</h1>
+            <p class="catalog-hero-text">
+              Thoughtfully designed objects for the workspace, home, and travel.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog-inner">
+            <div class="filters">
+              <div class="category">
+                <button></button>
+                <p>Парные</p>
+              </div>
+              <div class="category">
+                <button></button>
+                <p>Акссессуары</p>
+              </div>
+            </div>
+            <div class="catalog-content">
+              <div class="product-card">
+                <img src="img/catalog/parnaya1.png" alt="" />
+                <div class="product-text">
+                  <div class="product-text-top">
+                    <p class="product-title">Парная 1</p>
+                    <p class="product-price">Р0.99/Час</p>
+                  </div>
+                  <p class="product-description">До 10 человек</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <img src="img/catalog/parnaya2.png" alt="" />
+                <div class="product-text">
+                  <div class="product-text-top">
+                    <p class="product-title">Парная 2</p>
+                    <p class="product-price">Р0.89/Час</p>
+                  </div>
+                  <p class="product-description">До 8 человек</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <img src="img/catalog/parnaya3.png" alt="" />
+                <div class="product-text">
+                  <div class="product-text-top">
+                    <p class="product-title">Парная 3</p>
+                    <p class="product-price">Р0.69/Час</p>
+                  </div>
+                  <p class="product-description">До 5 человек</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
