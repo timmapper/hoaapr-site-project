@@ -121,12 +121,17 @@ a {
   color: var(--content-color-1);
 }
 
-.header-btn a {
+.header-btn button {
   color: var(--content-color-1);
   transition: 0.3s;
+  background-color: transparent;
+  border: none;
+  font-family: "BalkaraFreeCondensed", sans-serif;
+  font-size: 1.25rem;
+  cursor: pointer;
 }
 
-.header-btn a:hover {
+.header-btn button:hover {
   color: var(--primary-color-2);
 }
 
@@ -134,7 +139,7 @@ a {
   background-image: url(../img/index-white-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 99vh;
   display: flex;
   justify-content: center;
   margin-top: -8rem;
@@ -297,6 +302,7 @@ a {
   font-weight: 700;
   font-style: italic;
   color: var(--content-color-2);
+  min-height: 11.25rem;
 }
 
 .testimonial-author {
@@ -338,7 +344,17 @@ a {
   display: flex;
 }
 
+.zaebali-testi {
+  display: flex;
+  transition: 0.3s linear;
+}
+
 .footer {
+  background-color: var(--content-color-1);
+  display: flex;
+}
+
+.footer--index {
   background-image: url(../img/black-cement-rough-surface\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -383,6 +399,7 @@ a {
 
 .catalog {
   margin-top: 6rem;
+  margin-bottom: 7.5rem;
 }
 
 .filters {
@@ -419,6 +436,7 @@ a {
   border-radius: 1.5rem;
   border: 2px solid var(--primary-color-1);
   box-shadow: -4px 4px 4px 0 rgba(46, 41, 38, 25%);
+  cursor: pointer;
 }
 
 .product-text-top {
@@ -427,12 +445,18 @@ a {
   margin-top: 0.875rem;
 }
 
+.product-title:hover {
+  color: var(--primary-color-1);
+}
+
 .product-title {
   font-family: "BalkaraFreeCondensed", sans-serif;
   font-weight: 500;
   line-height: 1.5rem;
   color: var(--content-color-1);
   font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .product-price {
@@ -446,4 +470,79 @@ a {
 .product-description {
   margin-top: 0.375rem;
   font-weight: 600;
+}
+
+.about-hero-inner {
+  margin-top: 6rem;
+  align-items: center;
+  text-align: center;
+}
+
+.about-hero-title {
+  font-family: "BalkaraFreeCondensed", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: var(--content-color-1);
+}
+
+.about-hero-text {
+  line-height: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  max-width: 52rem;
+  margin: 2rem auto 0;
+}
+
+mark {
+  background-color: transparent;
+  color: var(--primary-color-1);
+}
+
+.about-gallery {
+  margin-top: 6rem;
+}
+
+.about-gallery-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-gallery-inner img {
+  border-radius: 1.5rem;
+  border: 2px solid var(--primary-color-1);
+  box-shadow: -4px 4px 4px 0 rgba(46, 41, 38, 25%);
+}
+
+.about-features {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.about-features-inner {
+  text-align: center;
+}
+
+.about-features-title {
+  font-family: "BalkaraFreeCondensed", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: var(--content-color-1);
+}
+
+.about-features-list {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  column-gap: 4rem;
+  list-style: decimal;
+  text-align: left;
+}
+
+.about-features-item {
+  margin-bottom: 2rem;
 }

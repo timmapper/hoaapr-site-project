@@ -30,12 +30,13 @@
             </ul>
           </nav>
           <div class="header-btn">
-            <a href="catalog.html">Бронь</a>
+            <button href="catalog.html">В баню</button>
           </div>
         </div>
       </div>
     </header>
     <script src="scripts/headerScroll.js"></script>
+    <div class="action-btn-overlay"></div>
     <main>
       <section class="hero">
         <div class="container">
@@ -120,35 +121,101 @@
         <div class="container">
           <div class="testimonials-inner">
             <div class="testimonials-backward">
-              <img src="img/Vector 3.png" alt="" class="strelochka" />
-            </div>
-            <div class="testimonials-slider">
               <img
-                src="img/11072a3d6f22d622dda08c68945b1be5-515518884 1.png"
+                src="img/Vector 3.png"
                 alt=""
-                class="testimonial-portrait"
+                class="strelochka"
+                id="prevBtn"
               />
-              <div class="testimonials-content">
-                <p class="tsitata">
-                  <italic
-                    >Лесная парная— это не просто место для очищения тела, но и
-                    святилище для духа. В парной я нахожу умиротворение, которое
-                    помогает мне сосредоточиться на своих мыслях и
-                    творчестве.</italic
-                  >
-                </p>
-                <p class="testimonial-author">Александр Грибоедов</p>
-                <p class="testimonial-about">Писатель, прозаик</p>
-              </div>
+            </div>
+            <div class="testimonials-slider" id="slider-blya">
+              <article class="zaebali-testi">
+                <img
+                  src="img/testimonials/griboedov.png"
+                  alt=""
+                  class="testimonial-portrait"
+                />
+                <div class="testimonials-content">
+                  <p class="tsitata">
+                    <italic
+                      >Лесная парная— это не просто место для очищения тела, но
+                      и святилище для духа. В парной я нахожу умиротворение,
+                      которое помогает мне сосредоточиться на своих мыслях и
+                      творчестве.</italic
+                    >
+                  </p>
+                  <p class="testimonial-author">Александр Грибоедов</p>
+                  <p class="testimonial-about">Писатель, прозаик</p>
+                </div>
+              </article>
+              <article class="zaebali-testi">
+                <img
+                  src="img/testimonials/levtolsti.png"
+                  alt=""
+                  class="testimonial-portrait"
+                />
+                <div class="testimonials-content">
+                  <p class="tsitata">
+                    <italic
+                      >В Лесной парной я чувствую себя свободным, как никогда.
+                      Вспоминаю детство, когда с семьей ходили париться каждую
+                      субботу. Здесь я ощущаю только тепло и покой.</italic
+                    >
+                  </p>
+                  <p class="testimonial-author">Лев Толстой</p>
+                  <p class="testimonial-about">Писатель</p>
+                </div>
+              </article>
+              <article class="zaebali-testi">
+                <img
+                  src="img/testimonials/jukovski.png"
+                  alt=""
+                  class="testimonial-portrait"
+                />
+                <div class="testimonials-content">
+                  <p class="tsitata">
+                    <italic
+                      >В бане я нахожу утешение от бурь человеческой души.
+                      Каждое парение — это своего рода очищение, как для тела,
+                      так и для ума.</italic
+                    >
+                  </p>
+                  <p class="testimonial-author">Василий Жуковский</p>
+                  <p class="testimonial-about">Поэт</p>
+                </div>
+              </article>
+              <article class="zaebali-testi">
+                <img
+                  src="img/testimonials/gogol.png"
+                  alt=""
+                  class="testimonial-portrait"
+                />
+                <div class="testimonials-content">
+                  <p class="tsitata">
+                    <italic
+                      >Лесная парная — это особенное царство, где каждый может
+                      оставить свои заботы за дверью.</italic
+                    >
+                  </p>
+                  <p class="testimonial-author">Николай Гоголь</p>
+                  <p class="testimonial-about">Прозаик</p>
+                </div>
+              </article>
             </div>
             <div class="testimonials-forward">
-              <img src="img/Vector 2.png" alt="" class="strelochka" />
+              <img
+                src="img/Vector 2.png"
+                alt=""
+                class="strelochka"
+                id="nextBtn"
+              />
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <script src="scripts/testimonialSlider.js"></script>
+    <footer class="footer--index">
       <div class="container">
         <div class="footer-inner">
           <p class="copyrights">
