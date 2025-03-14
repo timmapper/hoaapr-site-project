@@ -520,6 +520,10 @@ mark {
   box-shadow: -4px 4px 4px 0 rgba(46, 41, 38, 25%);
 }
 
+.about-gallery-photo {
+  text-align: center;
+}
+
 .about-features {
   margin-top: 6rem;
   margin-bottom: 4rem;
@@ -551,4 +555,44 @@ mark {
 
 .about-features-item {
   margin-bottom: 2rem;
+}
+
+.action-btn-overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(46, 41, 38, 50%);
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  margin-top: -8rem;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.overlay-container {
+  background-color: var(--content-color-1);
+  max-height: 50%;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 40px 4px var(--background-color-1);
+}
+
+.overlay-title {
+  color: var(--background-color-2);
+  margin: 2rem 4rem 4rem;
+  line-height: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.overlay-list {
+  margin: 0 4rem 4rem;
+  display: grid;
+  row-gap: 2rem;
+}
+
+.overlay-list p {
+  color: var(--background-color-1);
+  font-size: 1.5rem;
+  line-height: 2rem;
 }

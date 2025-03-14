@@ -29,13 +29,24 @@
               </li>
             </ul>
           </nav>
-          <!--<div class="header-btn">
-            <a href="catalog.html">В баню</a>
-          </div>-->
+          <div class="header-btn">
+            <button id="header-btn">В баню</button>
+          </div>
         </div>
       </div>
     </header>
     <script src="scripts/headerScroll.js"></script>
+    <div class="action-btn-overlay" id="action-overlay">
+      <div class="overlay-container">
+        <p class="overlay-title">Наши адреса:</p>
+        <div class="overlay-list">
+          <p>Парная 1 — С.-Петербургская губерния, Кудрово</p>
+          <p>Парная 2 — С.-Петербургская губерния, Мурино</p>
+          <p>Парная 3 — С.-Петербургская губерния, Шушары</p>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/overlay.js"></script>
     <main>
       <section class="about-hero">
         <div class="container">
@@ -52,9 +63,18 @@
       <section class="about-gallery">
         <div class="container">
           <div class="about-gallery-inner">
-            <img src="img/about/hero-photo-1.png" alt="" />
-            <img src="img/about/hero-photo-2.png" alt="" />
-            <img src="img/about/hero-photo-3.png" alt="" />
+            <div class="about-gallery-photo">
+              <img src="img/about/hero-photo-1.png" alt="" />
+              <p>Парная 1, Кудрово</p>
+            </div>
+            <div class="about-gallery-photo">
+              <img src="img/about/hero-photo-2.png" alt="" />
+              <p>Парная 2, Мурино</p>
+            </div>
+            <div class="about-gallery-photo">
+              <img src="img/about/hero-photo-3.png" alt="" />
+              <p>Парная 3, Шушары</p>
+            </div>
           </div>
         </div>
       </section>
