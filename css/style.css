@@ -419,6 +419,11 @@ a {
   margin-right: 0.5rem;
   border-radius: 50%;
   border: 1px solid var(--primary-color-2);
+  cursor: pointer;
+}
+
+.-active- {
+  background-color: var(--primary-color-2);
 }
 
 .catalog-content {
@@ -430,6 +435,7 @@ a {
 .product-card {
   max-width: 24rem;
   margin-bottom: 1rem;
+  display: block;
 }
 
 .product-card img {

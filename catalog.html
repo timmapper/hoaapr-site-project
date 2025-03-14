@@ -29,9 +29,9 @@
               </li>
             </ul>
           </nav>
-          <div class="header-btn">
+          <!--<div class="header-btn">
             <a href="catalog.html">В баню</a>
-          </div>
+          </div>-->
         </div>
       </div>
     </header>
@@ -42,7 +42,7 @@
           <div class="catalog-hero-inner">
             <h1 class="catalog-hero-title">Каталог</h1>
             <p class="catalog-hero-text">
-              Thoughtfully designed objects for the workspace, home, and travel.
+              Ознакомтесь с нашими парными и к ним прилагающимся.
             </p>
           </div>
         </div>
@@ -52,16 +52,16 @@
           <div class="catalog-inner">
             <div class="filters">
               <div class="category">
-                <button></button>
+                <button class="-active-" id="banyaBtn"></button>
                 <p>Парные</p>
               </div>
               <div class="category">
-                <button></button>
+                <button class="-active-" id="accessoiresBtn"></button>
                 <p>Акссессуары</p>
               </div>
             </div>
             <div class="catalog-content">
-              <div class="product-card">
+              <div class="product-card product-banya">
                 <img src="img/catalog/parnaya1.png" alt="" />
                 <div class="product-text">
                   <div class="product-text-top">
@@ -71,7 +71,7 @@
                   <p class="product-description">До 10 человек</p>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card product-banya">
                 <img src="img/catalog/parnaya2.png" alt="" />
                 <div class="product-text">
                   <div class="product-text-top">
@@ -81,7 +81,7 @@
                   <p class="product-description">До 8 человек</p>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card product-banya">
                 <img src="img/catalog/parnaya3.png" alt="" />
                 <div class="product-text">
                   <div class="product-text-top">
@@ -91,7 +91,7 @@
                   <p class="product-description">До 5 человек</p>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card product-accessoire">
                 <img src="img/catalog/venik.png" alt="" />
                 <div class="product-text">
                   <div class="product-text-top">
@@ -101,7 +101,7 @@
                   <p class="product-description">Из берёзы</p>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card product-accessoire">
                 <img src="img/catalog/cherpak.png" alt="" />
                 <div class="product-text">
                   <div class="product-text-top">
@@ -111,7 +111,7 @@
                   <p class="product-description">Бондарный</p>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card product-accessoire">
                 <img src="img/catalog/ZAparnik.png" alt="" />
                 <div class="product-text">
                   <div class="product-text-top">
@@ -121,17 +121,17 @@
                   <p class="product-description">Из липы</p>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card product-accessoire">
                 <img src="img/catalog/shapka.png" alt="" />
                 <div class="product-text">
                   <div class="product-text-top">
                     <p class="product-title">Шапка для бани</p>
-                    <p class="product-price">Р0.19</p>
+                    <p class="product-price">Р0.29</p>
                   </div>
                   <p class="product-description">Серая</p>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card product-accessoire">
                 <img src="img/catalog/schetka.png" alt="" />
                 <div class="product-text">
                   <div class="product-text-top">
@@ -141,7 +141,7 @@
                   <p class="product-description">Деревянная</p>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card product-accessoire">
                 <img src="img/catalog/rukavitsa.png" alt="" />
                 <div class="product-text">
                   <div class="product-text-top">
@@ -156,6 +156,7 @@
         </div>
       </section>
     </main>
+    <script src="scripts/categoryBtns.js"></script>
     <footer class="footer">
       <div class="container">
         <div class="footer-inner">
