@@ -122,17 +122,21 @@ a {
 }
 
 .header-btn button {
-  color: var(--content-color-1);
+  color: var(--background-color-1);
   transition: 0.3s;
-  background-color: transparent;
+  background-color: var(--primary-color-1);
   border: none;
   font-family: "BalkaraFreeCondensed", sans-serif;
   font-size: 1.25rem;
   cursor: pointer;
+  padding: 0.625rem 1.75rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
 }
 
 .header-btn button:hover {
-  color: var(--primary-color-2);
+  color: var(--background-color-2);
+  background-color: var(--primary-color-2);
 }
 
 .hero {
@@ -347,6 +351,33 @@ a {
 .zaebali-testi {
   display: flex;
   transition: 0.3s linear;
+}
+
+.testi-animation--forwards {
+  animation-name: testimonailOpacityAnim;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.testi-animation--backwards {
+  animation-name: testimonailOpacityAnim;
+  animation-duration: 0.3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes testimonailOpacityAnim {
+  from {
+    opacity: 0;
+    display: none;
+  }
+  1% {
+    opacity: 0.01;
+    display: flex;
+  }
+  to {
+    opacity: 1;
+    display: flex;
+  }
 }
 
 .footer {
@@ -568,6 +599,27 @@ mark {
   margin-top: -8rem;
   align-items: center;
   transition: 0.3s;
+}
+
+.action-btn-overlay-anim {
+  animation-name: overlayOpacityAnim;
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+}
+
+@keyframes overlayOpacityAnim {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: flex;
+    opacity: 0.01;
+  }
+  to {
+    display: flex;
+    opacity: 1;
+  }
 }
 
 .overlay-container {

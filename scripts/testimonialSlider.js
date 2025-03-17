@@ -22,8 +22,12 @@ function showNextSlide() {
 function updateSlider() {
   slides.forEach((slide, index) => {
     if (index === slideIndex) {
+      slide.classList.add("testi-animation--backwards");
+      slide.classList.remove("testi-animation--forwards");
       slide.style.display = "flex";
     } else {
+      slide.classList.remove("testi-animation--backwards");
+      slide.classList.add("testi-animation--forwards");
       slide.style.display = "none";
     }
   });
