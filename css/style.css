@@ -140,7 +140,7 @@ a {
 }
 
 .hero {
-  background-image: url(../img/index-white-background.jpg);
+  background-image: url(../img/white-background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 99vh;
@@ -213,7 +213,7 @@ a {
 }
 
 .features {
-  background-image: url(../img/black-cement-rough-surface\ 1.png);
+  background-image: url(../img/black-background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -275,7 +275,7 @@ a {
 }
 
 .testimonials {
-  background-image: url(../img/index-white-background.jpg);
+  background-image: url(../img/white-background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -386,7 +386,7 @@ a {
 }
 
 .footer--index {
-  background-image: url(../img/black-cement-rough-surface\ 1.png);
+  background-image: url(../img/black-background.webp);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -449,7 +449,7 @@ a {
   width: 1.5rem;
   margin-right: 0.5rem;
   border-radius: 50%;
-  border: 1px solid var(--primary-color-2);
+  border: 1px solid var(--content-color-2);
   cursor: pointer;
 }
 
